@@ -16,8 +16,16 @@ int main(void)
 		for (j = 00 ; j <= 99 ; j++)
 		{
 			putchar(i + '0');
-			putchar(' ')
+			putchar(' ');
 			putchar(j + '0');
+			if (j != 99)
+			{
+				putchar(',');
+				putchar(' ');
+
+			}
 		}
 	}
+	putchar('\n');
+	return (0);
 }
